@@ -2,13 +2,14 @@ import React from 'react'
 import CounterCourses from '../components/counterCourses'
 import "../assets/css/main.css";
 import Hero from '../components/hero';
-
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 
 function courses() {
   return (
 <main className="main">
-
+ <Header/>
   {/* Hero Section */}
   {/* <div className="page-title light-background">
       <div className="container">
@@ -175,6 +176,7 @@ function courses() {
       </div>
     </div>
   </section>
+  <Footer/>
 </main>
 
   )

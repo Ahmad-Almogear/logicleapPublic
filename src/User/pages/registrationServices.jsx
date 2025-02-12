@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Navbar, Container,Modal } from 'react-bootstrap';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 const CustomServiceForm = () => {
   const [showModal, setShowModal] = useState(false);
@@ -28,19 +30,11 @@ const CustomServiceForm = () => {
 
   return (
     <>
-    <h2 className="text-center mb-4 page-title light-background">Request Custom Courses</h2>
+    <Header/>
+    <h2 className="text-center mb-4 page-title light-background">Request Custom Service</h2>
     <div className="container">
       <div className="service-request-container">
         {/* <h2 className="text-center mb-4">Request Custom Service</h2> */}
-        {/* <div className="page-title light-background"> */}
-        {/* <nav className="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li className="current">Starter Page</li>
-          </ol> 
-        </nav> */}
-      {/* </div> */}
-    
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="serviceName" className="form-label">
@@ -137,6 +131,7 @@ const CustomServiceForm = () => {
         </Modal>
       </div>
     </div>
+    <Footer/>
     </>
   );
 };

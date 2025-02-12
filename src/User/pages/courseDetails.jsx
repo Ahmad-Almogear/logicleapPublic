@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Hero from '../components/hero';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 
 const CourseDetails = () => {
@@ -11,6 +13,7 @@ const CourseDetails = () => {
 
   return (
     <>
+  <Header/>
   <div id="carouselExampleDark" className="carousel-inner" data-bs-ride="carousel">
     <div className="carousel-item active">
       <img src="assets/img/code5.jpg" className="d-block w-100" alt="Image" />
@@ -176,6 +179,7 @@ const CourseDetails = () => {
       </div>
       <hr />
     </div>
+    <Footer/>
     </>
   );
 };

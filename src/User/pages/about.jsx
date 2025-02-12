@@ -3,7 +3,10 @@ import "../assets/css/main.css";
 import Hero from '../components/hero'
 import SuccessStory from './successStory';
 import Question from './question';
-import { Routes, Route } from 'react-router-dom'; // لا حاجة لـ BrowserRouter هنا
+import Header from '../components/header';
+import Footer from '../components/footer';
+import { Routes, Route } from 'react-router-dom';
+
 
 function About() {
   return (
@@ -11,6 +14,7 @@ function About() {
      <Routes> {/* يجب أن تكون المسارات داخل Routes فقط */}
         <Route path="/about" element={<Hero showHero={false} />} /> {/* عرض Hero فقط في صفحة about */}
       </Routes>
+    <Header />
     <main className="main">
       {/* About Section */}
       <section id="about" className="about section">
@@ -120,6 +124,7 @@ function About() {
     </main>
     <SuccessStory/>
     <Question/>
+    <Footer/>
     </>
   );
 }

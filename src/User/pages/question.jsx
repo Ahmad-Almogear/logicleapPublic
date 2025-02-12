@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/css/main.css';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 function FaqSection() {
   // State to manage which FAQ item is currently active
@@ -18,7 +20,6 @@ function FaqSection() {
 
   return (
     <main className="main">
-
       {/* Faq Section */}
       <section className="faq-9 faq section light-background" id="faq">
 
@@ -99,7 +100,6 @@ function FaqSection() {
         </div>
       </section>
       {/* /Faq Section */}
-      
     </main>
   );
 }

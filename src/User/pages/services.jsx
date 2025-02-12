@@ -5,10 +5,13 @@ import RegistrationServices from './registrationServices'
 import NavServicse from '../components/navServices'
 import CounterServices from '../components/counterServices'
 import Partner from '../components/partner'
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 function Services() {
   return (
 <main className="main">
+  <Header/>
 <div id="carouselExampleDark" className="carousel-inner" data-bs-ride="carousel">
     <div className="carousel-item active">
       <img src="assets/img/code5.jpg" className="d-block w-100" alt="Image" />
@@ -269,6 +272,7 @@ function Services() {
     </div>
   </section>
   {/* /Services Section */}
+  <Footer/>
 </main>
 
   )

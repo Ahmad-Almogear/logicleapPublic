@@ -2,7 +2,7 @@ import React from 'react'
 
 function successStory() {
   return (
-    <main className="main">
+<main className="main">
   {/* success story Section */}
   <section id="testimonials" className="testimonials section light-background">
     {/* Section Title */}

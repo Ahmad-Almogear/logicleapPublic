@@ -7,6 +7,8 @@ import Coding4 from '../assets/img/Coding4.png';
 import Coding5 from '../assets/img/Coding5.png';
 import Coding6 from '../assets/img/Coding6.png';
 import Coding7 from '../assets/img/Coding7.png';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 const CourseDetails = () => {
   const [selectedImage, setSelectedImage] = useState('./assets/img/frontend.jpeg');
@@ -17,6 +19,7 @@ const CourseDetails = () => {
 
   return (
     <>
+    <Header/>
       {/* Carousel Section */}
       {/* <div id="carouselExampleDark" className="carousel-inner " data-bs-ride="carousel">
         <img src="assets/img/code5.jpg" className="d-block w-100" />
@@ -128,13 +131,14 @@ const CourseDetails = () => {
 
             {/* Buy Now Button */}
             <a href="/registrationCourses" className="btn btn-primary">
-              Buy Now
+              Register
               <i className="bi bi-arrow-right" />
             </a>
           </div>
         </div>
         <hr />
       </div>
+      <Footer/>
     </>
   );
 };

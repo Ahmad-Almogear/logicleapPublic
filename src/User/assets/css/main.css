@@ -28,7 +28,7 @@ a {
   --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #EB4747; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --contrast-color: #212529; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
   --greened-color:#A7D477;
 }
 
@@ -2479,7 +2479,7 @@ section,
   max-width: 400px;
   padding: 30px;
   background-color: white;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(212, 16, 16, 0.1);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -2488,7 +2488,8 @@ section,
 }
 .nav-tabs .nav-link.active {
   background-color: white;
-  border-bottom: 2px solid #EB4747;;
+  border-bottom: solid #EB4747;
+  border-radius: 20px;
   color: black;
 }
 .btn-primary {

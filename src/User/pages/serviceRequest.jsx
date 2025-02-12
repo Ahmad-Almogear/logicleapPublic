@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 function serviceRequest() {
   return (
 <main className="main">
+  <Header/>
   {/* Page Title */}
   <div className="page-title light-background">
     <div className="container">
@@ -132,6 +135,7 @@ function serviceRequest() {
     </div>
   </section>
   {/* /Service Details Section */}
+  <Footer/>
 </main>
 
   )

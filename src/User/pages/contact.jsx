@@ -1,11 +1,13 @@
 import React from 'react'
 import "../assets/css/main.css";
 import Hero from '../components/hero';
-
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 function contact() {
   return (
-    
+<>
+<Header/>
 <main className="main">
   
   {/* Contact Section */}
@@ -139,7 +141,8 @@ function contact() {
   </section>
   {/* /Contact Section */}
 </main>
-
+<Footer/>
+</>
   )
 }
 
